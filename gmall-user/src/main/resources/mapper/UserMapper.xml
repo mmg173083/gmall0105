@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.gmall.user.mapper.UserMapper">
+
+    <!--<select id="selectListByNameAndSJ" resultType="com.ywjs.energy.entity.oracle.EcBengRd">-->
+        <!--SELECT * FROM EC_BENG_RD-->
+        <!--where bmc=#{name}-->
+        <!--AND to_char(sj,'yyyy-mm-dd') in-->
+        <!--<foreach collection="sjs" item="sj" open="(" close=")" separator=",">-->
+            <!--#{sj}-->
+        <!--</foreach>-->
+    <!--</select>-->
+    <select id="selectAllUser" resultType="com.atguigu.gmall.bean.UmsMember">
+        select * from ums_member;
+    </select>
+</mapper>
